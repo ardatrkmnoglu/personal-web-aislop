@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200"
+   height="200"
+   viewBox="0 0 52.916667 52.916666"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   sodipodi:docname="s.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.9988292"
+     inkscape:cx="63.191328"
+     inkscape:cy="92.536114"
+     inkscape:window-width="1712"
+     inkscape:window-height="974"
+     inkscape:window-x="-1"
+     inkscape:window-y="43"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer2" />
+  <defs
+     id="defs1">
+    <rect
+       x="130.87126"
+       y="363.74512"
+       width="190.53316"
+       height="223.25098"
+       id="rect2" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:none">
+    <text
+       xml:space="preserve"
+       transform="matrix(0.27182185,0,0,0.27182185,-31.206051,-108.39828)"
+       id="text2"
+       style="font-style:normal;font-variant:normal;font-weight:100;font-stretch:normal;font-size:192px;font-family:Skia;-inkscape-font-specification:'Skia Thin';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);display:inline;fill:#000000"><tspan
+         x="130.87109"
+         y="539.99609"
+         id="tspan2">S</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.8px;font-family:Silom;-inkscape-font-specification:Silom;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke-width:0.264583"
+       x="86.565887"
+       y="89.621155"
+       id="text3"><tspan
+         sodipodi:role="line"
+         id="tspan3"
+         style="stroke-width:0.264583"
+         x="86.565887"
+         y="89.621155" /></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2">
+    <rect
+       style="fill:#b3b3b3;fill-rule:evenodd;stroke-width:0.297902"
+       id="rect7"
+       width="5.1521654"
+       height="19.834391"
+       x="-19.858839"
+       y="4.8588009"
+       ry="2.5760827"
+       transform="rotate(-108.07532)" />
+    <rect
+       style="fill:#b3b3b3;fill-rule:evenodd;stroke-width:0.325968"
+       id="rect8"
+       width="4.930716"
+       height="25.063984"
+       x="-0.66771853"
+       y="-41.433922"
+       ry="2.717469"
+       transform="rotate(133.83812)" />
+    <rect
+       style="fill:#b3b3b3;fill-rule:evenodd;stroke-width:0.297902"
+       id="rect9"
+       width="5.1521654"
+       height="19.834391"
+       x="-37.707458"
+       y="-0.96651804"
+       ry="2.5760827"
+       transform="rotate(-108.07532)" />
+    <rect
+       style="fill:#2d5016;fill-rule:evenodd;stroke-width:0.297902"
+       id="rect19"
+       width="5.1521654"
+       height="19.834391"
+       x="-18.354347"
+       y="4.5145459"
+       ry="2.5760827"
+       transform="rotate(-108.07532)" />
+    <rect
+       style="fill:#2d5016;fill-rule:evenodd;stroke-width:0.325968"
+       id="rect3"
+       width="4.930716"
+       height="25.063984"
+       x="-1.0723259"
+       y="-39.944527"
+       ry="2.717469"
+       transform="rotate(133.83812)" />
+    <rect
+       style="fill:#2d5016;fill-rule:evenodd;stroke-width:0.297902"
+       id="rect4"
+       width="5.1521654"
+       height="19.834391"
+       x="-36.202969"
+       y="-1.310773"
+       ry="2.5760827"
+       transform="rotate(-108.07532)" />
+  </g>
+</svg>

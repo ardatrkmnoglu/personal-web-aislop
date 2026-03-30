@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            background-color: hsl(210, 0%, 85%);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0;
+        }
+
+        h2 {
+            margin-top: 5px;
+            margin-bottom: 2px;
+        }
+
+        .game-container {
+            margin: 30px;
+        }
+
+        .game-container button {
+            font-size: 7.5rem;
+            min-width: 160px;
+            border: none;
+            border-radius: 20px;
+            background-color: hsl(200, 100%, 50%);
+            margin: 0 10px;
+            cursor: pointer;
+            transition: background-color 0.25s ease;
+        }
+
+        .game-container button:hover {
+            background-color: hsl(200, 100%, 30%);
+        }
+
+        #playerDisplay,
+        #computerDisplay {
+            font-size: 2rem;
+        }
+
+        #resultDisplay {
+            font-size: 3.5rem;
+            margin: 25px 0;
+        }
+
+        .greenText {
+            color: rgb(0, 150, 0);
+        }
+
+        .redText {
+            color: rgb(190, 0, 0);
+        }
+
+        #reset-btn {
+            font-size: 1.75rem;
+            border: none;
+            border-radius: 10px;
+            min-width: 150px;
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Rock-Paper-Scissors Minigame</h1>
+    <h2>vs. Computer</h2>
+
+    <div class="game-container">
+        <button onclick="playGame('rock')">🪨</button>
+        <button onclick="playGame('paper')">📄</button>
+        <button onclick="playGame('scissors')">✂️</button>
+    </div>
+
+    <div id="playerDisplay">Player (0): </div>
+    <div id="computerDisplay">Computer (0): </div>
+    <div id="resultDisplay"></div>
+
+    <button id="reset-btn" class="hidden" onclick="window.location.reload()">Start Over</button>
+
+    <script src="rcsgame.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mini-applications and games built by Arda Türkmenoğlu.">
+    <title>Applications — Arda Türkmenoğlu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <p><img class="logo" src="images/logo2tr.png" alt="Logo"></p>
+            </li>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="funfacts.html">About</a></li>
+            <li><a href="apps.html" class="active">Applications</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+        <div class="page-header fade-in">
+            <h1>Apps & Minigames</h1>
+        </div>
+
+        <section class="fade-in">
+            <div class="apps-grid">
+                <div class="glass-card app-card" id="button1">
+                    <span class="app-icon">🧮</span>
+                    <span class="app-name">Calculator</span>
+                </div>
+                <div class="glass-card app-card" id="button2">
+                    <span class="app-icon">🕐</span>
+                    <span class="app-name">Digital Clock</span>
+                </div>
+                <div class="glass-card app-card" id="button3">
+                    <span class="app-icon">⏱</span>
+                    <span class="app-name">Stopwatch</span>
+                </div>
+                <div class="glass-card app-card" id="button4">
+                    <span class="app-icon">🔢</span>
+                    <span class="app-name">Counter</span>
+                </div>
+                <div class="glass-card app-card" id="button5">
+                    <span class="app-icon">🎯</span>
+                    <span class="app-name">Number Guessing Game</span>
+                </div>
+                <div class="glass-card app-card" id="button6">
+                    <span class="app-icon">✊</span>
+                    <span class="app-name">Rock-Paper-Scissors</span>
+                </div>
+                <div class="glass-card app-card" id="button7">
+                    <span class="app-icon">📝</span>
+                    <span class="app-name">Word Prediction Game</span>
+                </div>
+                <div class="glass-card app-card" id="button8">
+                    <span class="app-icon">🌤</span>
+                    <span class="app-name">Weather App</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <img src="images/logotrn2.png" alt="Team Sunlight Logo">
+        <p>© 2026 Arda Türkmenoğlu</p>
+        <p class="footer-links">
+            <a href="https://github.com/ArdaTrkmnoglu">GitHub</a>
+            <a href="https://x.com/ArdaTrkmnoglu">Twitter</a>
+            <a href="https://instagram.com/ardatrkmnoglu">Instagram</a>
+            <a href="https://linkedin.com/in/arda-t%C3%BCrkmeno%C4%9Flu-879216295">LinkedIn</a>
+        </p>
+    </footer>
+
+    <script>
+        const buttons = {
+            button1: "apps/calc.html",
+            button2: "apps/clock.html",
+            button3: "apps/stopwatch.html",
+            button4: "apps/count.html",
+            button5: "apps/guess.html",
+            button6: "apps/rcsgame.html",
+            button7: "apps/wordgame.html",
+            button8: "apps/weather.html",
+        };
+
+        Object.keys(buttons).forEach(id => {
+            const btn = document.getElementById(id);
+            if (btn) {
+                btn.addEventListener("click", () => {
+                    window.location.href = buttons[id];
+                });
+            }
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+    </script>
+</body>
+
+</html>

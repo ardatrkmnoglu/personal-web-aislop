@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fun facts about Arda Türkmenoğlu — hobbies, interests, and more.">
+    <title>About — Arda Türkmenoğlu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <p><img class="logo" src="images/logo2tr.png" alt="Logo"></p>
+            </li>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="funfacts.html" class="active">About</a></li>
+            <li><a href="apps.html">Applications</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+        <div class="page-header fade-in">
+            <h1>Fun Facts About Me</h1>
+        </div>
+
+        <section class="fade-in">
+            <div class="glass-card facts-card">
+                <p>
+                    This page will be under construction until the next term. This part is not included in the
+                    project assessment, so I will take time for here later.
+                </p>
+                <br>
+                <p>However, here are some facts you should know for now:</p>
+                <br>
+                <p>
+                    I am<br>
+                    ・20 years old,<br>
+                    ・Virgo,<br>
+                    ・Fenerbahçe fan,<br>
+                    and have a very cute and loving girlfriend,
+                    <a class="ayda-link"
+                        href="https://itu-itis.github.io/introduction-to-information-systems-2024-itu-itis24-aytimur23/TermProject/index.html">Ayda</a>.
+                </p>
+                <br>
+                <p>I will update this page later, but that's all for now. ⛅︎</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <img src="images/logotrn2.png" alt="Team Sunlight Logo">
+        <p>© 2026 Arda Türkmenoğlu</p>
+        <p class="footer-links">
+            <a href="https://github.com/ArdaTrkmnoglu">GitHub</a>
+            <a href="https://x.com/ArdaTrkmnoglu">Twitter</a>
+            <a href="https://instagram.com/ardatrkmnoglu">Instagram</a>
+            <a href="https://linkedin.com/in/arda-t%C3%BCrkmeno%C4%9Flu-879216295">LinkedIn</a>
+        </p>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+    </script>
+</body>
+
+</html>

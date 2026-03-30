@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: hsl(200, 70%, 80%);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .weatherForm {
+            margin: 20px;
+        }
+
+        .cityInput {
+            padding: 10px;
+            font-size: 1.75rem;
+            font-weight: 500;
+            border: 2px solid hsla(0, 0%, 25%, 0.3);
+            border-radius: 15px;
+            margin: 10px;
+        }
+
+        button[type="submit"] {
+            padding: 10px 20px;
+            font-weight: bold;
+            font-size: 1.75rem;
+            background-color: aqua;
+            border: 2px solid hsla(0, 0%, 25%, 0.3);
+            border-radius: 15px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: hsl(180, 100%, 40%);
+        }
+
+        .weatherContainer {
+            background: linear-gradient(180deg, rgb(0, 157, 255), hsl(39, 100%, 75%));
+            padding: 50px;
+            box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.4);
+            min-width: 300px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin: 5px 0;
+        }
+
+        .city,
+        .temperature {
+            font-size: 3rem;
+            font-weight: bold;
+            color: hsla(0, 0%, 0%, 0.75);
+            margin-bottom: 25px;
+        }
+
+        .humidity {
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .descDisplay {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .weatherEmoji {
+            margin: 0;
+            font-size: 7rem;
+        }
+
+        .errorDisplay {
+            font-size: 2rem;
+            font-weight: bold;
+            color: hsla(0, 0%, 0%, 0.75);
+        }
+    </style>
+</head>
+
+<body>
+
+    <form class="weatherForm">
+        <input type="text" class="cityInput" placeholder="Enter city here">
+        <button type="submit">Get Weather</button>
+    </form>
+
+    <div class="weatherContainer" style="display: none;">
+
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+
+</html>

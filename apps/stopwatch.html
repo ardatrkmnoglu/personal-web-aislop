@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: steelblue;
+        }
+
+        #myH1 {
+            font-size: 5rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 200;
+            color: black;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 600px;
+            padding: 30px;
+            border: 4px solid;
+            border-radius: 40px;
+            background-color: lightskyblue;
+        }
+
+        #display {
+            font-size: 6rem;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            color: black;
+            text-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.7);
+            margin-bottom: 25px;
+        }
+
+        #controls button {
+            font-size: 1.25rem;
+            font-weight: bold;
+            padding: 10px 20px;
+            margin: 5px;
+            min-width: 125px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        #start-btn {
+            background-color: hsl(120, 100%, 35%);
+        }
+
+        #start-btn:hover {
+            background-color: hsl(120, 100%, 25%);
+        }
+
+        #stop-btn {
+            background-color: hsl(0, 100%, 40%);
+        }
+
+        #stop-btn:hover {
+            background-color: hsl(0, 100%, 30%);
+        }
+
+        #reset-btn {
+            background-color: hsl(210, 100%, 45%);
+        }
+
+        #reset-btn:hover {
+            background-color: hsl(210, 100%, 35%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="myH1">Stopwatch</h1>
+
+    <div id="container">
+
+        <div id="display">
+            00:00:00:00
+        </div>
+
+        <div id="controls">
+            <button id="start-btn">Start</button>
+            <button id="reset-btn" onclick="reset()">Reset</button>
+        </div>
+
+    </div>
+
+    <script src="stopwatch.js"></script>
+</body>
+
+</html>
